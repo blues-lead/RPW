@@ -8,3 +8,5 @@ Teh custom_env is done using virtual environment, because there some package con
 * version of the tensorflow must be between 1.8.0 and 1.14.0
 * Version of msgpack-python must be 0.5.6
 * Version of msgpack-rpc-python msut be 0.4.1
+
+The environment used for testing is Blocks/AirSim.
