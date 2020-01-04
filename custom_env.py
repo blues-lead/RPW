@@ -22,17 +22,17 @@ from stable_baselines.common.vec_env import DummyVecEnv
 
 TARGET_POSITION = airsim.Vector3r(-37.8, -101.7, 0.23)
 
-DISCRETE_ACTIONS = {
-    0: [0.0, 0.0],    # Coast
-    1: [0.0, -0.5],   # Turn Left
-    2: [0.0, 0.5],    # Turn Right
-    3: [1.0, 0.0],    # Forward
-    4: [-0.5, 0.0],   # Brake
-    5: [1.0, -0.5],   # Bear Left & accelerate
-    6: [1.0, 0.5],    # Bear Right & accelerate
-    7: [-0.5, -0.5],  # Bear Left & decelerate
-    8: [-0.5, 0.5],   # Bear Right & decelerate
-}
+#DISCRETE_ACTIONS = {
+#    0: [0.0, 0.0],    # Coast
+#    1: [0.0, -0.5],   # Turn Left
+#    2: [0.0, 0.5],    # Turn Right
+#    3: [1.0, 0.0],    # Forward
+#    4: [-0.5, 0.0],   # Brake
+#    5: [1.0, -0.5],   # Bear Left & accelerate
+#    6: [1.0, 0.5],    # Bear Right & accelerate
+#    7: [-0.5, -0.5],  # Bear Left & decelerate
+#    8: [-0.5, 0.5],   # Bear Right & decelerate
+#}
 
 class UEEnv(gym.Env):
     metadata = {'render.modes': ['human']}
